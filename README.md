@@ -67,3 +67,10 @@ Ford-Fulkerson Algorithm은 residual network를 활용해 최대유량을 구하
   
   ![사진](https://blog.kakaocdn.net/dn/bPNTPA/btqIwDWasV4/cui76uE6xK89xmiuKT76kK/img.png)
  
+ ### 성능분석
+ Ford-Fulkerson Algorithm 시간복잡도: 
+ * DFS를 이용하는 경우: 최대 유랑이 f라면 각 증가 경로 당 유랑이 최소 1이기 때문에 증가 경로의 최대 계수는 f.
+ 하나의 증가 경로를 찾는데 방문하는 정점과 간선은 최대로 계산할 시 각각 V,E
+ ->최대유랑을 얻어내는데 필요헌 시간 복잡도는 O(|E|+|V|f) 정점의 개수가 무시할만큼 작다면 O(|E|f)
+ * BFS를 이용하는 경우: f를 탐색하는데 |E||V|가 소요되어 시간복잡도는 O(|E||V|^2)
+ 
